@@ -1,0 +1,566 @@
+/* ********************************************
+ * Global
+ * ********************************************/
+
+body {
+    overflow    : hidden;
+    padding-top : 60px;
+    font-size   : 16px;
+}
+
+#skrollr-body {
+    margin-top : 60px;
+}
+
+/*consider adding this to skrollstrap engine*/
+.skrollr-mobile .skrollable .skrollable {
+    position: relative;
+}
+
+p {
+    margin : 0 0 20px;
+}
+
+a {
+    color : #333;
+}
+a:hover {
+    text-decoration : none;
+}
+
+img {
+    width : 100%;
+}
+
+hr {
+    border-top : 1px dotted #333;
+}
+
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+.pull-left {
+    float        : left;
+    margin-right : 40px;
+    margin-left  : -400px;
+}
+    .pull-left a {
+        padding-left : 10px;
+        color        : #333;
+    }
+
+
+.background-still, .foreground-still {
+    position : absolute;
+    width    : 100%;
+    height   : 100%;
+}
+
+.foreground-still {
+    z-index        : 9997;
+    pointer-events : none;
+}
+
+.background {
+    width  : 100%;
+    height : 120%;
+}
+
+.foreground {
+    z-index : 9999;
+    width   : 100%;
+    height  : 120%;
+}
+
+.background-full {
+    width  : 100%;
+    height : 100%;
+}
+
+.source {
+    text-align : right;
+    color      : gray;
+    font-size  : 12px;
+}
+
+.scroll-hud {
+    /*display: none;*/
+}
+
+#scroll-arrow-down {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#scroll-arrow-down > div {
+    color: white;
+    font-size: 14px;
+     -webkit-animation      : scrollflash 2s infinite;
+    -o-animation            : scrollflash 2s infinite;
+    animation               : scrollflash 2s infinite;
+    -webkit-animation-delay : 1s;
+    -o-animation-delay      : 1s;
+    animation-delay         : 1s;
+}
+    @-webkit-keyframes scrollflash {
+        0% { opacity:0; }
+        50% { opacity: 1;}
+        100% { opacity: 0;}
+    }
+    
+    @-moz-keyframes scrollflash {
+        0% { opacity:0; }
+        50% { opacity: 1;}
+        100% { opacity: 0;}
+    }
+    
+    @-keyframes scrollflash {
+        0% { opacity:0; }
+        50% { opacity: 1;}
+        100% { opacity: 0;}
+    }
+}
+
+#scroll-arrow-down span {
+    display: block;
+    font-size: 24px;
+}
+
+/* ********************************************
+ * Compatibility Mask
+ * ********************************************/
+
+#compatibility_mask img {
+    width: 25%;
+}
+
+#compatibility_mask a {
+    color: blue;
+}
+
+/* ********************************************
+ * Custom Global Styles
+ * ********************************************/
+
+
+/* ********************************************
+ * Header
+ * ********************************************/
+
+header {
+    position: fixed;
+    z-index:9998;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    opacity:1;
+    background-color: gray;
+    font-weight: 400;
+}
+    header div {
+        top:0px;
+        display: inline-block;
+        height: 100%;
+        vertical-align: top;
+    }
+
+
+/* ********************************************
+ * Sections
+ * ********************************************/
+
+
+#all-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+    #all-bg div {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position:absolute;
+    }
+    #all-bg .intro-bg {
+        background-image:url('../images/intro-bg.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #all-bg .eye-bg {
+        background-image:url('../images/section1-bg.jpg');
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+
+    #all-bg .credits-bg {
+        background-image:url('../images/credits-bg.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+/* Section0 */
+.section0 {
+    height: 2000px;
+}
+
+    .section0 .globe {
+        position: absolute !important;
+        right: 20px;
+        width: 300px;
+        height: 100%;
+        text-align: right;
+    }
+        .section0 .globe img{
+            /*height: 50%;
+            width: auto;*/
+        }
+    .section0 .satellite {
+        position: absolute !important;
+        top:0px;
+        bottom: 10%;
+        width: 40%;
+        height: 100%;
+    }
+        .section0 .satellite img{
+            position:absolute !important;
+        }
+    .section0 .title {
+        position: absolute;
+        top: 60px;
+        left: 80px;
+        z-index:999;
+    }
+    .section0 .sponsored {
+        position: absolute;
+        bottom: 80px;
+        right: 60px;
+        z-index:999;
+    }
+
+
+.section1 {
+    /*background-color:#efefef;*/
+}
+    .section1 .background-full {
+        height: 100%;
+        position: absolute;
+        /*background-image: url('../images/section1-bg.jpg');*/
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+
+    .section1 .data {
+        position: absolute !important;
+        right: 181px;
+        top: 155px;
+        width:200px;
+        height:250px;
+        text-align: right;
+    }
+        .section1 .data img{
+            position: absolute !important;
+            top: 0px;
+            left: 0px;
+        }
+
+    .section1 .content {
+        margin: 300px 0 300px 0;
+    }
+
+.section2 {
+    color: white;
+
+}
+    .section2 .background-full {
+        position: absolute;
+        background-image: url('../images/intro-bg.jpg');
+        text-align:center;
+    }
+    .section2 .big-globe {
+        position:absolute !important;
+        top: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .section2 .sat {
+        position: absolute !important;
+        width:25%;
+    }
+    .section2 .sat4 {
+        padding-right:20px;
+    }
+    .section2 .sat div {
+        text-align: left;
+        position: absolute !important;
+
+    }
+        .sat1 div {
+            right: -20px;
+            bottom: 0px;
+        }
+        .sat2 div {
+            right: 20px;
+            bottom: 0px;
+        }
+        .sat3 div {
+            right: -10px;
+            bottom: 0px;
+        }
+        .sat4 div {
+            right: 40px;
+            bottom:-30px;
+        }
+
+    .section2 .content {
+        margin: 1600px 0 300px 0;
+    }
+    
+    .sidebar-sat1 {
+        /*width: 80%;*/
+        margin-bottom: 40px;
+    }
+
+    .sidebar-sat1 div {
+        text-align: right;
+        margin-top: -20px;
+        margin-bottom:10px;
+    }
+
+.section3 {
+    color: #333;
+}
+
+    .section3 .background-full {
+        position: absolute;
+        background-image: url('../images/section3-bg.jpg');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .video-container {
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 0;
+        margin-bottom: 10px;
+        padding-bottom: 66.6666%;
+    }
+    
+    #player {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section3 .content {
+         margin: 300px 0 300px 0;
+    }
+
+.section4 {
+    height: 2000px;
+}
+    #animation-title {
+        font-family: 'Jura';
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        color: #8f8d8d;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .section4 .animation-container {
+        height: 100%;
+        text-align: center;
+    }
+
+    #animation-images {
+        display: inline-block;
+        position: relative;
+    }
+        #animation-images img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            left: 0px;
+            top: 0px;
+        }
+
+        #bar1, #bar2, #bar3 {
+            opacity: 0.85;
+            -ms-transform-origin: top left;
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+        }
+
+.section5 {
+}
+
+    #sec5text {
+        margin:400px 0 400px 0
+    }
+
+    #tapestry-image {
+        width: 100%;
+        height: 500px;
+
+    }
+        #tapestry-image img {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+        }
+
+.section6 { 
+}
+
+.credits {
+    padding: 0 0 60px 0;
+    text-align: center;
+    color: #000;
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+
+    .credits p:nth-last-child(2) {
+        margin-bottom: 60px;
+    }
+
+    .presented-by-lm-logo {
+        display: block;
+        width: 500px;
+        margin: 0 auto 60px;
+        color:#aeaeae;
+    }
+
+
+@media screen and  (max-width: 1200px) {
+
+
+}
+
+@media screen and (max-width: 1050px) {
+    .header_headline {
+        display:block;
+        width: 315px;
+    }
+}
+
+@media screen and  (max-width: 991px) {
+
+    .modal-md-hide {
+        display:none;
+    }
+    .credits {
+        margin-top: 100px;
+    }
+}
+
+@media screen and  (max-width:870px) {
+    .breakpoint2 {
+        display:none;
+    }
+}
+
+@media screen and  (max-width:810px) {
+/*    .breakpoint2 {
+        display:none;
+    }*/
+    .header_social {
+        margin:18px 0px 0 0;font-size:20px
+    }
+}
+
+@media screen and  (max-width: 767px) {
+    .title-container {
+        width: 100%;
+    }
+
+    .titles h1 {
+        margin-top: 35px;
+        font-size: 60px;
+    }
+
+    .sidebar-sat1-container, .sidebar-sat2-container {
+        text-align: center;
+    }
+    .sidebar-sat1, .sidebar-sat2 {
+        width: 80%;
+        display:inline-block;
+    }
+}
+
+@media screen and  (max-width:690px) {
+    .header_headline {
+        display:none;
+    }
+
+    .section0 h1 {
+        font-size: 60px;
+    }
+
+    .section0 .sponsored {
+        right: 0px;
+        padding: 0 20px 0 20px;
+    }
+
+}
+
+/*@media screen and  (max-width:650px) {
+    .header_headline {
+        display:none;
+    }
+
+}
+*/
+@media screen and (max-width:550px) {
+
+}
+
+@media screen and (max-width:401px) {
+
+
+    .credits {
+        margin-top: 20px;
+    }
+
+    .presented-by-ae-logo {
+        width: 180px;
+    }
+}
+
+/*mobile-specific styles*/
+.skrollr-mobile #skrollr-body {
+    margin-top: 60px;
+}
+
+.skrollr-mobile .mobile-sm-hide {
+    display:none;
+}
+
+

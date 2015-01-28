@@ -1,0 +1,163 @@
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+}
+
+header {
+	height: 84px;
+	background-color:black;
+	opacity:0.2;
+}
+
+section {
+	overflow: hidden;
+	position:relative;
+}
+.skrollable {
+	position:fixed;
+	z-index:100;
+	/*width: 100%;*/
+}
+.skrollr-mobile .skrollable {
+	position:absolute;
+}
+.skrollable .skrollable {
+	position:absolute;
+}
+.skrollable .skrollable .skrollable {
+	position:static;
+}
+.skrollr-desktop .skrollable .skrollable {
+	position: relative;
+}
+
+#scrollbar {
+	position:fixed;
+	right:2px;
+	height:50px;
+	width:6px;
+	background:#444;
+	background:rgba(0,0,0,0.6);
+	border:1px solid rgba(255,255,255,0.6);
+	z-index:300;
+	border-radius:3px;
+}
+
+.skrollr-desktop #scrollbar {display:none;}
+
+.scroll-hud {
+	position: fixed;
+	padding:5px;
+	top: 0px;
+	right: 0px;
+	background-color: red;
+	color: white;
+	z-index:9999;
+	/*display:none;*/
+}
+
+.content {
+	position: relative;
+	z-index: 999;
+}
+
+.background-container-sticky {
+	width: 100%;
+	position: absolute !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	overflow:hidden;
+}
+
+.background-container {
+	width: 100%;
+	position: absolute !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	overflow:hidden;
+}
+
+.background-fixed {
+	width: 100%;
+	height: 100%;
+	position: absolute !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+.background-full {
+	width: 100%;
+	height: 100%;
+}
+.background-still, .foreground-still {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.foreground-still {
+	z-index: 9997;
+	pointer-events:none;
+}
+.background {
+	height: 120%;
+	width: 100%;
+}
+.foreground {
+	height: 120%;
+	width: 100%;
+	z-index: 9999;
+}
+
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:9998; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+#compatibility_mask {
+	display:none;
+	padding-top:40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 9999;
+	margin: 0;
+	text-align: center;
+}

@@ -1,0 +1,232 @@
+body {
+	font-family: georgia, serif;
+	font-size: 16px;
+	overflow: hidden;
+	padding-top:84px;
+}
+
+#skrollr-body {
+	margin-top:84px;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+a {
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+}
+
+hr {
+	border-top: 1px dotted #333;
+}
+header {
+	position: fixed;
+	width: 100%;
+	background-image: url('../images/header_gradient.png');
+	top: 0px;
+	z-index:9998;
+	font-family: "Roboto";
+	font-weight: 400;
+	opacity:1;
+}
+	.header-top {
+		height: 60px;
+	}
+		.header-top div {
+			height: 100%;
+			display: inline-block;
+			top:0px;
+			vertical-align: top;
+		}
+
+	.header-bottom {
+		height: 24px;
+		background-color: #333333;
+	}
+
+	header .social_link {
+		margin:0 5px 0 5px;
+	}
+
+h1 {
+	font-family:'Titillium Web';
+	font-weight:700;
+	font-size: 44px;
+	margin-bottom: 20px;
+
+}
+
+.header_headline {
+	margin: 20px 0 0 10px;
+	display:inline-block;
+	font-size:14px;
+}
+
+.header_social {
+	margin:18px 40px 0 0;font-size:20px
+}
+
+.pull-left {
+	margin-left: -400px;
+	margin-right: 40px;
+	float: left;
+}
+	.pull-left a {
+		padding-left: 10px;
+		font-family: 'Titillium Web';
+		color: #333;
+	}
+
+
+/*.background-still, .foreground-still {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}*/
+.foreground-still {
+	z-index: 9997;
+	pointer-events:none;
+}
+.background {
+	height: 120%;
+	width: 100%;
+}
+.foreground {
+	height: 120%;
+	width: 100%;
+	z-index: 9999;
+}
+.nodes {
+	position: absolute !important;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
+
+
+
+
+/*	.section0 .background-still {
+		background: url(../images/cloud-bg.jpg) 50% 50% no-repeat;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  	}
+*/
+
+.section1 {
+
+}
+
+
+.section2 {
+
+}
+
+.section3 {
+
+}
+/*	.section3 .background {
+		height: 100%;
+		width: 140%;
+		opacity: 0.1;
+		background: url(../images/worldmap.jpg) 50% 0 repeat;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+	}*/
+
+
+
+/*	.section5 .background-fixed{
+		position:absolute;
+		height:100%;
+		width:100%;
+		background: url(../images/hangar.jpg) 50% 50% no-repeat;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+	}*/
+
+
+.section6 {
+	/*background: url(../images/cockpit.jpg) 50% 0 repeat;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		background-attachment: fixed;*/
+}
+
+.credits {
+	font-family: 'Roboto';
+	color: white;
+	text-align:center;
+	padding:60px 0 60px 0;
+	background: url(../images/acars_bg.png) 50% 0 repeat;
+	box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.5) ;
+
+}
+
+@media (max-width: 1200px) {
+
+
+}
+@media (max-width: 991px) {
+
+	.modal-md-hide {
+		display:none;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.modal-sm-hide{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.header_headline{
+		display:block;
+		width: 265px;
+		margin:10px 0 0 10px;
+	}
+}
+@media (max-width:810px) {
+	.breakpoint2{
+		display:none;
+	}
+	.header_social {
+	margin:18px 0px 0 0;font-size:20px
+	}
+}
+@media (max-width:650px) {
+	.header_headline {
+		display:none;
+	}
+}
+
+@media screen and (max-width:401px) {
+	header .social_link {
+		margin:0px;
+	}
+}
+
+/*mobile-specific styles*/
+.skrollr-mobile #skrollr-body{
+	margin-top: 84px;
+}
+
+.skrollr-mobile .mobile-sm-hide {
+	display:none;
+}
+
+
